@@ -25,6 +25,7 @@ body {
   display: flex;
   margin-top: 8px;
   border-radius: 8px;
+  background: #FFF;
   border: 1px solid rgb(237, 237, 237);
   box-shadow: rgb(224, 224, 224) 0px 2px 8px 0px;
 }
@@ -36,7 +37,7 @@ body {
 
 .item:hover {
   cursor: pointer;
-  background-color: rgba(21, 207, 179, 0.15);
+  background-color: rgb(50, 220, 200);
 }
 
 .item:hover .divider {
@@ -100,6 +101,7 @@ button {
 
   position: relative;
   vertical-align: middle;
+  outline: none;
 }
 
 button::before {
@@ -145,13 +147,13 @@ button.toggle:hover::after {
   height: 100%;
 }
 button.toggle:hover::before {
-  border-top-color: rgba(21, 207, 179, 0.75);
-  border-right-color: rgba(21, 207, 179, 0.75);
+  border-top-color: rgba(21, 207, 179);
+  border-right-color: rgba(21, 207, 179);
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 button.toggle:hover::after {
-  border-bottom-color: rgba(21, 207, 179, 0.75);
-  border-left-color: rgba(21, 207, 179, 0.75);
+  border-bottom-color: rgba(21, 207, 179);
+  border-left-color: rgba(21, 207, 179);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
     height 0.25s ease-out 0.75s;
 }
