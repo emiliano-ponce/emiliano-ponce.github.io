@@ -2,8 +2,10 @@ body {
   width: 400px;
   height: 550px;
   padding: 0 8px;
-  text-align: center;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
 }
 
 .content {
@@ -118,6 +120,7 @@ button::after {
 
 button.toggle {
   transition: color 0.25s;
+  align-self: center;
 }
 button.toggle::before,
 button.toggle::after {
